@@ -6,6 +6,6 @@ import { InicioComponent } from './Pages/inicio/inicio.component';
 export const routes: Routes = [
     {path: '', component: LandingPageComponent},
     {path: 'Iniciar-sesion', component: LoginComponent},
-    {path: 'inicio', component: InicioComponent}
+    {path: 'inicio', component: InicioComponent},
 
 ];
