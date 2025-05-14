@@ -7,9 +7,9 @@
     <div class="menu" [class.active]="isMenuOpen">
         <a>Servicio</a>
         <a>Contacto</a>
-        <button class="register mobile-register">
+        <a class="register mobile-register" href="/Iniciar-sesion">
             Empieza Hoy
-        </button>
+        </a>
     </div>
 
     <div class="hamburger" (click)="toggleMenu()" [class.open]="isMenuOpen">
@@ -19,9 +19,9 @@
     </div>
 
     <div class="desktop-register">
-        <button class="register">
+        <a class="register" href="/Iniciar-sesion">
             Empieza Hoy
-        </button>
+        </a>
     </div>
 </nav>
 

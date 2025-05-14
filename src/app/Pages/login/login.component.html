@@ -1,15 +1,24 @@
 <div class="container">
-    <form (submit)="HandleDni()">
+    <form (submit)="HandleSumbit()">
         <div class="title">
             <img src="Logo.png">
             <h1>Energym</h1>
         </div>
-        <div class="dni-container">
-            
-            <label>Ingrese su dni</label>
-            <input type="text" [(ngModel)]="dni" name="dni">
+        <div class="bar"></div>
+        <h2>Iniciar Sesion</h2>
+        <div class="data-container">
+            <label>Email</label>
+            <input type="email"  required  placeholder="Correo Electronico" [(ngModel)]="Email" name="Email" >
+            <label>Password</label>
+            <input type="Password" placeholder="Contraseñá" [(ngModel)]="Password" name="Password">
+            <div class="ForgotPassword">
+                <a>¿Olvidaste tu contraseña?</a>
+            </div>
             <p class="error" *ngIf="error">No puede dejar el campo vacío</p>
-            <button type="submit">Enviar</button>
+            <div class="container-buttom">
+                <button type="submit">Enviar</button>
+            </div>
+
         </div>
     </form>
 </div>

@@ -10,19 +10,18 @@ import { ToastrService } from 'ngx-toastr';
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
-export class IniciarComponent {
-  dni?: string;
+export class LoginComponent {
+  Email: string = '';
+  Password: string = '';
   error: boolean = false
   constructor(private router: Router, private toastService: ToastrService) { }
 
-  HandleDni() {
+  HandleSumbit() {
     this.error = false
-    if (!this.dni || this.dni.toString().trim() === '') {
+    if (this.Email.toString().trim() === '' || this.Password.toString().trim() === '') {
       this.error = true
       return;
     }
-
-    localStorage.setItem('Dni', this.dni);
     this.toastService.success('Bienvenido')
     this.router.navigate(['/inicio']);
 

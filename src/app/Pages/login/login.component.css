@@ -13,6 +13,8 @@ form {
     width: 100%;
     max-width: 400px;
     padding: 20px;
+    justify-items: center;
+    align-items: flex-start;
 }
 
 .title {
@@ -22,15 +24,17 @@ form {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 img {
     width: 80px;
     height: auto;
 }
-.dni-container{
-    text-align: center;
+
+.data-container {
+    text-align: start;
+    width: 80%;
 }
 
 label {
@@ -39,11 +43,15 @@ label {
     margin-bottom: 5px;
 }
 
-input[type="text"] {
-    width: 80%;
-    padding: 8px;
+input {
+    width: 100%;
+    padding: 4px;
     box-sizing: border-box;
     border-radius: 15px;
+}
+
+.container-buttom {
+    text-align: center;
 }
 
 button {
@@ -61,10 +69,32 @@ button:hover {
     background-color: #bd431b;
 }
 
-.error{
+.error {
     color: rgb(252, 4, 4);
     padding: 0;
     margin: 0;
     margin-top: 5px;
     font-size: 10px;
+}
+
+h2 {
+    margin: 10px;
+    padding: 0;
+    color: white;
+}
+
+.bar {
+    background-color: #A8E10C;
+    width: 50%;
+    height: 3px;
+    margin: 0 10px;
+    padding: 0;
+    border-radius: 50px;
+}
+
+.ForgotPassword{
+    text-align: end;
+    color: #A8E10C;
+    font-size: 10px;
+    cursor: pointer;
 }
