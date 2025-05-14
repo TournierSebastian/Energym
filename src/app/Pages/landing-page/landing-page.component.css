@@ -188,6 +188,13 @@ footer a{
     .container-data img {
         display: none;
     }
+    .container-data {
+        padding: 20px;
+    }
+    .container-data h2 {
+        padding: 0px;
+        margin: 10px;
+    }
 }
 
 @media (max-width: 560px) {
@@ -220,5 +227,13 @@ footer a{
     .mobile-register {
         display: block;
         margin-top: 10px;
+    }
+
+    .container-data {
+        padding: 20px 0px;
+    }
+    .container-data h2 {
+        padding: 0px;
+        margin: 10px;
     }
 }

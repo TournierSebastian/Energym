@@ -41,7 +41,7 @@
   transition: background-color 0.3s ease;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .images-container {
     padding: 0 30px;
     gap: 10px;
@@ -61,11 +61,6 @@
   }
 }
 
-@media (min-width: 768px) {
-  .image-wrapper {
-    flex: 0 0 calc(33.333% - 14px);
-  }
-}
 
 .indicators {
   text-align: center;

@@ -63,6 +63,7 @@ button {
     cursor: pointer;
     width: 50%;
     margin-top: 15px;
+    font-size: 18px;
 }
 
 button:hover {
