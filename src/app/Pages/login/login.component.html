@@ -1,0 +1,15 @@
+<div class="container">
+    <form (submit)="HandleDni()">
+        <div class="title">
+            <img src="Logo.png">
+            <h1>Energym</h1>
+        </div>
+        <div class="dni-container">
+            
+            <label>Ingrese su dni</label>
+            <input type="text" [(ngModel)]="dni" name="dni">
+            <p class="error" *ngIf="error">No puede dejar el campo vacío</p>
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,80 @@
+<nav>
+    <div class="logo">
+        <img src="Logo.png" class="logo-img">
+        <h2>Energym</h2>
+    </div>
+
+    <div class="menu" [class.active]="isMenuOpen">
+        <a>Servicio</a>
+        <a>Contacto</a>
+        <button class="register mobile-register">
+            Empieza Hoy
+        </button>
+    </div>
+
+    <div class="hamburger" (click)="toggleMenu()" [class.open]="isMenuOpen">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+    <div class="desktop-register">
+        <button class="register">
+            Empieza Hoy
+        </button>
+    </div>
+</nav>
+
+<body>
+
+    <div class="container-data">
+        <div>
+            <h2>Quienes Somos?</h2>
+            <p>En Energym, no solo ofrecemos un lugar para entrenar, sino una comunidad activa y comprometida con el
+                bienestar. Con varias sucursales y cientos de socios diarios, buscamos brindar una experiencia
+                motivadora y organizada. Para mejorar la gestión de nuestras clases y evitar confusiones, estamos
+                implementando un sistema moderno de reservas que permitirá a los socios asegurar su lugar de forma
+                simple y eficiente.</p>
+        </div>
+        <div>
+            <img src="/Imagenes/landing1.png">
+        </div>
+    </div>
+    <app-carrusel [imagePaths]="[
+    '/Imagenes/Carrusel1.png',
+    '/Imagenes/Carrusel2.png',
+    '/Imagenes/Carrusel3.png',
+    '/Imagenes/Carrusel4.png'
+  ]">
+
+    </app-carrusel>
+    <div class="container-data">
+        <div>
+            <img src="/Imagenes/landing2.png">
+        </div>
+        <div>
+            <h2>Servicios</h2>
+            <p>En Energym ofrecemos clases grupales como yoga, funcional, spinning y más, con instructores calificados y
+                cupos limitados. Nuestras salas de musculación están equipadas con tecnología de última generación.
+                Próximamente, podrás reservar tu lugar en las clases fácilmente a través de nuestro sistema online.
+                También te ofrecemos entrenamiento personalizado, adaptado a tus objetivos. Con tu membresía, accedés a
+                todas nuestras sucursales sin complicaciones. ¡Te esperamos!</p>
+        </div>
+    </div>
+
+</body>
+
+<footer>
+    <div>
+        <a>Términos y condiciones</a>
+    </div>
+    <div>
+        <a>{{ '@Energym' }}</a>
+    </div>
+    <div>
+        <a>{{ '@Energym' }}</a>
+    </div>
+    <div>
+        <a>Contacto</a>
+    </div>
+</footer>

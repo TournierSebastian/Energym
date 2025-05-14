@@ -1,0 +1,17 @@
+<div class="carousel-container">
+  <button class="carousel-btn prev" (click)="prev()">&#10094;</button>
+  
+  <div class="images-container">
+    <div class="image-wrapper" *ngFor="let image of visibleImages">
+      <img [src]="image" alt="Product image" class="carousel-image">
+    </div>
+  </div>
+  
+  <button class="carousel-btn next" (click)="next()">&#10095;</button>
+</div>
+
+<div class="indicators">
+  <span *ngFor="let img of imagePaths; let i = index" 
+        [class.active]="i === currentIndex" 
+        (click)="goTo(i)"></span>
+</div>

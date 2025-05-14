@@ -1,0 +1,38 @@
+.navbar {
+    display: flex;
+    background-color: #2C2C2C;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+
+.logo {
+    display: flex;
+    gap: 10px;
+}
+
+.logo h2 {
+    color: white;
+}
+
+img {
+    width: 60px;
+    height: auto;
+}
+
+.perfil {
+    background-color: #F15623;
+    padding: 8px 15px;
+    border-radius: 15px;
+    color: white;
+
+}
+
+.perfil a {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
