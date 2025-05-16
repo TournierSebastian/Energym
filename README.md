@@ -1,3 +1,29 @@
+# Contexto
+EnerGym es un gimnasio con varias sucursales. Cada día recibe cientos de socios que vienen a entrenar y tomar clases, pero el sistema de gestión es un desastre. Las clases tienen cupos limitados, y los socios se anotan por WhatsApp o en un papel, lo que genera confusión y sobrecupo en algunas clases. Necesitan un sistema de reservas que nos ayude a organizar esto mejor.
+Problemas actuales que queremos resolver:
+- ** Algunos socios se anotan en clases y luego no asisten, dejando lugares vacíos.
+- ** No tenemos control claro de la disponibilidad de cada clase.
+- Queremos motivar a los socios a entrenar con constancia, premiando a los más activos.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Energym
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.9.

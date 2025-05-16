@@ -1,6 +1,11 @@
 <app-navbar />
-<div class="container">
-    <h2>Seleciona una sucursal</h2>
+<div class="container mx-auto px-4 max-w-7xl">
+    <h2 class="text-3xl mt-5 mb-6 text-center">Selecciona una sucursal</h2>
 
+    
+    <div *ngFor="let sucursal of Sucursal" class="bg-[#2C2C2C] flex justify-between items-center w-3/4 p-4 rounded-lg m-2">
 
+        <h2 class="text-white text-2xl">{{sucursal.nombre}}</h2>
+        <button class="bg-[#F15623] px-3 py-1 rounded-2xl text-white" (click)="SelectSucursal(sucursal.nroSucursal, sucursal.nombre)">Selecionar</button>
+    </div>
 </div>

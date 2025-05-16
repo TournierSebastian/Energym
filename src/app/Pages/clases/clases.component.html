@@ -1,0 +1,20 @@
+<app-navbar />
+<div class="container mx-auto px-4 w-full">
+    <h2 class="text-3xl mt-5 mb-6 text-center">Selecciona una Clase</h2>
+    <div class="grid grid-cols-1 gap-4 w-3/4"> 
+        <div *ngFor="let item of Clases" class="w-full">  
+            <app-card 
+                [nroClase]="item.nroClase" 
+                [nombreClase]="item.nombreClase" 
+                [fecha]="item.fecha" 
+                [hora]="item.hora" 
+                [capacidad]="item.capacidad"
+                [inscriptos]='item.inscriptos'
+                [nombreEntrenador]="item.nombreEntrenador"
+                (HanleButton)="revervarClick($event)" 
+                [button]="'Reservar'"
+                class="w-full">
+            </app-card>
+        </div>
+    </div>
+</div>

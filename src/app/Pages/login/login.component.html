@@ -2,23 +2,22 @@
     <form (submit)="HandleSumbit()">
         <div class="title">
             <img src="Logo.png">
-            <h1>Energym</h1>
+            <h1 class="text-3xl">Energym</h1>
         </div>
         <div class="bar"></div>
-        <h2>Iniciar Sesion</h2>
+        <h2 class="text-2xl">Iniciar Sesion</h2>
         <div class="data-container">
             <label>Email</label>
             <input type="email"  required  placeholder="Correo Electronico" [(ngModel)]="Email" name="Email" >
             <label>Password</label>
             <input type="Password" placeholder="Contraseñá" [(ngModel)]="Password" name="Password">
             <div class="ForgotPassword">
-                <a>¿Olvidaste tu contraseña?</a>
+                <a href="/Recuperar-Contrasena">¿Olvidaste tu contraseña?</a>
             </div>
             <p class="error" *ngIf="error">No puede dejar el campo vacío</p>
             <div class="container-buttom">
                 <button type="submit">Enviar</button>
             </div>
-
         </div>
     </form>
 </div>

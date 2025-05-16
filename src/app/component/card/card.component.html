@@ -1,0 +1,57 @@
+<!-- <div   *ngFor="let item of getItems()" class="bg-[#2C2C2C] flex flex-col md:flex-row w-full p-4 rounded-2xl md:rounded-4xl m-2 gap-4 md:gap-6 px-4 md:px-6 transition-all hover:bg-[#3A3A3A]">
+
+    <div class="flex-1 flex flex-col md:flex-row text-white items-start md:items-center">
+        <h2 class="text-xl md:text-2xl font-semibold mb-2 md:mb-0">{{ isReserva(item) ? item.clase.nombreClase : item.nombreClase }}</h2>
+        <div class="flex md:justify-end gap-2 md:gap-3 md:pl-4 text-xs md:text-sm">
+            <p class="bg-[#3A3A3A] md:bg-transparent px-2 py-1 md:px-0 md:py-0 rounded">📅{{ isReserva(item) ? item.clase.fecha : item.fecha }}</p>
+            <p class="bg-[#3A3A3A] md:bg-transparent px-2 py-1 md:px-0 md:py-0 rounded">🕒{{ isReserva(item) ? item.clase.hora : item.hora }}</p>
+        </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row justify-center items-start md:items-center text-white gap-1 border-t md:border-t-0 pt-3 md:pt-0 border-[#3A3A3A]">
+        <h2 class="text-sm md:text-base opacity-80">Entrenador:</h2>
+        <h2 class="text-lg md:text-xl font-medium">{{ isReserva(item) ? item.clase.nombreEntrenador : item.nombreEntrenador }}</h2>
+    </div>
+
+    <div class="flex flex-col text-white items-center justify-center border-t md:border-t-0 pt-3 md:pt-0 border-[#3A3A3A]">
+        <h2 class="text-sm md:text-base opacity-80">Inscriptos</h2>
+        <div class="flex items-center gap-1">
+            <p class="text-lg font-bold">{{ isReserva(item) ? item.clase.inscriptos : item.inscriptos }}</p>
+            <p class="opacity-60">/{{ isReserva(item) ? item.clase.capacidad : item.capacidad }}</p>
+        </div>
+    </div>
+
+    <button (click)="OnHandleButton(isReserva(item) ? item.nroReserva : item.nroClase)" class="bg-[#F15623] hover:bg-[#E04B1A] rounded-xl md:rounded-2xl px-4 py-2 md:px-6 text-sm md:text-base text-white font-medium flex items-center justify-center transition-colors mt-4 md:mt-0">
+        {{button}}
+    </button>
+
+</div> -->
+
+
+<div  class="bg-[#2C2C2C] flex flex-col md:flex-row w-full p-4 rounded-2xl md:rounded-4xl m-2 gap-4 md:gap-6 px-4 md:px-6 transition-all hover:bg-[#3A3A3A]">
+    <div class="flex-1 flex flex-col md:flex-row text-white items-start md:items-center">
+        <h2 class="text-xl md:text-2xl font-semibold mb-2 md:mb-0">{{nombreClase}}</h2>
+        <div class="flex md:justify-end gap-2 md:gap-3 md:pl-4 text-xs md:text-sm">
+            <p class="bg-[#3A3A3A] md:bg-transparent px-2 py-1 md:px-0 md:py-0 rounded">📅{{fecha}}</p>
+            <p class="bg-[#3A3A3A] md:bg-transparent px-2 py-1 md:px-0 md:py-0 rounded">🕒{{hora}}</p>
+        </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row justify-center items-start md:items-center text-white gap-1 border-t md:border-t-0 pt-3 md:pt-0 border-[#3A3A3A]">
+        <h2 class="text-sm md:text-base opacity-80">Entrenador:</h2>
+        <h2 class="text-lg md:text-xl font-medium">{{ nombreEntrenador }}</h2>
+    </div>
+
+    <div class="flex flex-col text-white items-center justify-center border-t md:border-t-0 pt-3 md:pt-0 border-[#3A3A3A]">
+        <h2 class="text-sm md:text-base opacity-80">Inscriptos</h2>
+        <div class="flex items-center gap-1">
+            <p class="text-lg font-bold">{{ inscriptos }}</p>
+            <p class="opacity-60">/{{ capacidad }}</p>
+        </div>
+    </div>
+
+    <button (click)="OnHandleButton()" class="bg-[#F15623] hover:bg-[#E04B1A] rounded-xl md:rounded-2xl px-4 py-2 md:px-6 text-sm md:text-base text-white font-medium flex items-center justify-center transition-colors mt-4 md:mt-0">
+        {{button}}
+    </button>
+
+</div>

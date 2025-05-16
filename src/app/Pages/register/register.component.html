@@ -1,0 +1,51 @@
+<div class="container">
+    <form (submit)="HandleSumbit()">
+        <div class="title">
+            <img src="Logo.png">
+            <h1 class="text-3xl">Energym</h1>
+        </div>
+        <div class="bar"></div>
+        <h2 class="text-3xl">Crea tu cuenta</h2>
+        <!-- Si sobra tiempo ver si se pueden remplazar los input y crear un utils -->
+        <div class="data-container">
+            <label>Dni</label>
+            <input type="text" placeholder="Documento" [(ngModel)]="Dni" name="Dni">
+            <p *ngIf="errors.Dni" class="error">
+                El dni debe tener 8 digitos </p>
+
+            <label>Nombre</label>
+            <input type="text" placeholder="Nombre" name="Nombre" [(ngModel)]="Nombre">
+            <p *ngIf="errors.Nombre" class="error">Ingrese un Nombre</p>
+
+            <label>Apellido</label>
+            <input type="text" placeholder="Apellido" name="Apellido" [(ngModel)]="Apellido" >
+            <p *ngIf="errors.Apellido" class="error">Ingrese un Apellido</p>
+
+            <label>Email</label>
+            <input type="Email" placeholder="Correo Electronico" name="Email" [(ngModel)]="Email">
+            <p *ngIf="errors.Email" class="error">Email invalidoo</p>
+
+            <label>Telefono</label>
+            <input type="number" placeholder="Telefono celular" name="Telefono" [(ngModel)]="Telefono" >
+            <p *ngIf="errors.Telefono" class="error">Telefono invalido</p>
+
+            <label>Contraseñá</label>
+            <input type="Password" placeholder="Contraseña" name="Password" [(ngModel)]="Password" >
+            <p *ngIf="errors.Password" class="error">Minimo 8 caracteres</p>
+
+            <label>Confirmar contraseñá</label>
+            <input type="Password" placeholder="Confirmar contraseñá" name="ConfirmPassword" [(ngModel)]="ConfirmPassword"> 
+            <p *ngIf="errors.ConfirmPassword" class="error">Las contraseñas no coinciden</p>
+
+
+            <div class="Login">
+                <a  href="/Iniciar-sesion">Iniciar Sesion</a>
+            </div>
+
+
+            <div class="container-buttom">
+                <button type="submit">Enviar</button>
+            </div>
+        </div>
+    </form>
+</div>

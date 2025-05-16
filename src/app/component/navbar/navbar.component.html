@@ -3,10 +3,26 @@
         <img src="Logo.png">
         <h2>Energym</h2>
     </a>
+    <div>
+        <ng-container *ngIf="isPerfilRoute(); else profileLink">
+            <div class="flex items-center gap-2">
+                <div class="flex text-white gap-2">
+                    <h2>{{nombre}}</h2>
+                    <h2>{{apellido}}</h2>
+                </div>
+                <div class="bg-[#F15623] rounded-2xl p-1">
+                    <lucide-angular [name]="userIcon" />
+                </div>
+            </div>
+        </ng-container>
 
-    <div class="perfil">
-        <a href="/perfil">
-            Perfil
-        </a>
+        <ng-template #profileLink>
+
+            <div class="perfil">
+                <a href="/perfil">
+                    Perfil
+                </a>
+            </div>
+        </ng-template>
     </div>
 </div>

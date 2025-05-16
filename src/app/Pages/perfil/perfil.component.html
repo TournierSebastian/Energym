@@ -1,0 +1,28 @@
+<app-navbar></app-navbar>
+<div class="container mx-auto px-4 w-full">
+    <div class="mb-8">
+        <h2 class="text-3xl font-bold mb-4">DATA PERFIL</h2>
+    </div>
+
+    
+    <h2 class="text-3xl mt-5 mb-6 text-center">Selecciona una Clase</h2>
+    
+        <div class="grid grid-cols-1 gap-4 w-3/4">
+            <div *ngFor="let item of Reserva" class="w-full">
+                <app-card 
+                    [nroClase]="item.clase.nroClase" 
+                    [nombreClase]="item.clase.nombreClase" 
+                    [fecha]="item.clase.fecha" 
+                    [hora]="item.clase.hora" 
+                    [capacidad]="item.clase.capacidad"
+                    [inscriptos]='item.clase.inscriptos'
+                    [nombreEntrenador]="item.clase.nombreEntrenador"
+                    [nroReserva]="item.nroReserva"
+                    (HanleButton)="EliminarClick($event)" 
+                    [button]="'Eliminar'"  
+                    class="w-full">
+                </app-card>
+            </div>
+        </div>
+
+</div>
